@@ -66,6 +66,11 @@ fn tuplas () {
 
 fn loops () {
     for i in 1..20 {
-        println!("The value of i in loops - example 1 is: {i}");
+        if i%2 == 0 {
+            println!("This number is par: {i}")
+        } else {
+            println!("This number isn't par: {i}")
+        }
     }
+
 }
