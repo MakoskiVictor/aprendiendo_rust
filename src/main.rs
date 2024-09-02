@@ -1,6 +1,6 @@
 mod helper;
 
-use helper::structs::TupleE;
+//use helper::structs::TupleE;
 fn main() {
     println!("Hello, world!");
     let a_number: i32 = 10;
@@ -39,7 +39,8 @@ fn main() {
     // tambien puedo:
     print_cadena(&text_concat);
 
-    tuplas()
+    tuplas();
+    loops();
 }
 
 fn print_cadena (cadena: &str) {
@@ -49,11 +50,22 @@ fn print_cadena (cadena: &str) {
 fn tuplas () {
     // IMPORTO TupleE DE LA CARPETA HELPERS
     //struct TupleE (char, i32, bool, char);
-    let tuple_e: TupleE = ('E', 5i32, true, 'A');
+    let tuple_e:(char, i32, bool, char) = ('E', 5i32, true, 'A');
     // Desestructuración
-    let (a, b, c) = tuple_e;
-    println!("{a}, {b}, {c}");
+    let (a, b, c, d) = tuple_e;
+    println!("{a}, {b}, {c}, {d}");
 
+    let array1 = ["Nelson", "Christian", "Marco"];
     
-    
+    for i in array1 {
+        println!("El valor de i es: {i}");
+    }
+
+
+}
+
+fn loops () {
+    for i in 1..20 {
+        println!("The value of i in loops - example 1 is: {i}");
+    }
 }

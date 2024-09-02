@@ -1,1 +1,1 @@
-pub struct TupleE (char, i32, bool, char);
+//pub struct TupleE (char, i32, bool, char);
