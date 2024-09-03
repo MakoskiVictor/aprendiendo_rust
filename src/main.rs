@@ -2,8 +2,11 @@
 mod ejercicios;
 
 use crate::ejercicios::finabonacci::finabonacci;
+use crate::ejercicios::who_likes_it::likes;
 
 fn main() {
+    let names = ["Pedro", "Marcos", "Gustavo", "Julio", "Pedro", "Marcos", "Gustavo", "Julio"];
+    likes(&names);
     let resultado = finabonacci(6);
     println!("El resultado es: {resultado}");
     /* println!("Hello, world!");
